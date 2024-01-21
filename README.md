@@ -37,7 +37,8 @@ Environment Details:
 - Learning Parameters: 
   - Learning Rate: 0.01
   - Batch Size: 2048
-  - Discount Ratio: 0.99
+  - Discount Ratio: 0.95
+  - Number of Timesteps per Episodes: 70
 
 Scenario Description:
 
@@ -50,9 +51,8 @@ Three agents aim to reach three unlabeled landmarks. Rewards are given upon reac
 
 Setup & Usage
 -------------
-
-1. Dependencies: Ensure you have all the necessary dependencies required by MPE and MADDPG installed. you can check them from the readme in maddpg directory. Since some of the required packages are outdated, setting up a virtual environment is highly recommended!
-2. Training: To train the agents, cd into maddpg/experiments and run `python train_v2.py`. Use argument --exp-name to keep track of your experiment Adjust the training parameters as required but the default parameters are the ones used in the paper.
+1. Dependencies: This code is succesfully tested in Ubuntu 20.04 LTS. Since some of the required packages are outdated, setting up a virtual environment is highly recommended! To install Ensure you have all the necessary dependencies required by MPE and MADDPG installed. This can be done by checking out the readme in maddpg directory. (EASY SETUP (recommended): Assuming Ubuntu 20.04 is installed, following the commands provided in /instructions/EC2_commands_ubuntu.txt should be enough to setup everything on your machine.)
+2. Training: To train the agents, cd into maddpg/experiments and run `python train_v3.py`. Use argument --exp-name to keep track of your experiment. Adjust the training parameters as required. The default parameters are the ones used in the paper.
 3. Visualization: To visualize the behavior of the agents use --restore to load an already trained experiment and use --display to see the agent behaviors.
 
 
