@@ -1,0 +1,39 @@
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install -y build-essential libgdbm-dev libnss3-dev wget libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python3-openssl git
+
+
+curl https://pyenv.run | bash
+echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
+echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+source ~/.bashrc
+pyenv install 3.5.4
+pyenv global 3.5.4
+
+
+pip install numpy==1.14.5
+pip install protobuf==3.11.3 (or 3.19.6)
+pip install tensorflow==1.8.0
+pip install gym==0.10.5
+pip install wandb --no-deps
+pip install configparser PyYAML promise GitPython python-dateutil subprocess32 pathtools requests shortuuid sentry-sdk Click docker-pycreds psutil six urllib3
+pip install pandas
+pip install matplotlib
+
+
+ssh-keygen -t rsa -b 4096 -C "haeri.hsn@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+
+
+
+git clone git@github.com:hossein-haeri/multi-agent-rsrn.git
+cd ~/multi-agent-rsrn/maddpg
+pip install -e .
+
+tmux
