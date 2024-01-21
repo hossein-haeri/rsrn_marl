@@ -25,15 +25,15 @@ pip install pandas
 pip install matplotlib
 
 
-ssh-keygen -t rsa -b 4096 -C "haeri.hsn@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "[NEEDS TO BE REPLACED WITH YOUR EMAIL]"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub
 
 
 
-git clone git@github.com:hossein-haeri/multi-agent-rsrn.git
-cd ~/multi-agent-rsrn/maddpg
+git clone git@github.com:hossein-haeri/rsrn_marl.git
+cd ~/rsrn_marl/maddpg
 pip install -e .
 
 tmux
