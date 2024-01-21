@@ -11,15 +11,12 @@ This repository contains the Python implementation of our work on integrating 's
     <img src="rsrn_diagram.png" width="500"/>
 </div>
 
-Cite Us
---------
 
-This work and the associated code are based on the paper 'Reward-Sharing Relational Networks in Multi-Agent Reinforcement Learning as a Framework for Emergent Behavior' by Hossein Haeri, Reza Ahmadzadeh, and Kshitij Jerath published in International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2021) - Adaptive and Learning Agents Workshop (ALA). If you find our work useful or use it in your research, please consider citing our paper:
-
-https://arxiv.org/abs/2207.05886
-
-You can find more details on the project website: https://sites.google.com/view/marl-rsrn
-https://drive.google.com/file/d/1LTxAY6wN31Quw7PeOfRqSNqlvunOlu0v/view?usp=sharing
+Setup & Usage
+-------------
+1. Dependencies: This code is succesfully tested in Ubuntu 20.04 LTS. Since some of the required packages are outdated, setting up a virtual environment is highly recommended! To install Ensure you have all the necessary dependencies required by MPE and MADDPG installed. This can be done by checking out the readme in maddpg directory. (EASY SETUP (recommended): Assuming Ubuntu 20.04 is installed, following the commands provided in /instructions/EC2_commands_ubuntu.txt should be enough to setup everything on your machine.)
+2. Training: To train the agents, cd into maddpg/experiments and run `python train_v3.py`. Use argument --exp-name to keep track of your experiment. Adjust the training parameters as required. The default parameters are the ones used in the paper.
+3. Visualization: To visualize the behavior of the agents use --restore to load an already trained experiment and use --display to see the agent behaviors.
 
 
 Simulation and Scenario
@@ -49,12 +46,15 @@ Three agents aim to reach three unlabeled landmarks. Rewards are given upon reac
 </div>
 
 
-Setup & Usage
--------------
-1. Dependencies: This code is succesfully tested in Ubuntu 20.04 LTS. Since some of the required packages are outdated, setting up a virtual environment is highly recommended! To install Ensure you have all the necessary dependencies required by MPE and MADDPG installed. This can be done by checking out the readme in maddpg directory. (EASY SETUP (recommended): Assuming Ubuntu 20.04 is installed, following the commands provided in /instructions/EC2_commands_ubuntu.txt should be enough to setup everything on your machine.)
-2. Training: To train the agents, cd into maddpg/experiments and run `python train_v3.py`. Use argument --exp-name to keep track of your experiment. Adjust the training parameters as required. The default parameters are the ones used in the paper.
-3. Visualization: To visualize the behavior of the agents use --restore to load an already trained experiment and use --display to see the agent behaviors.
 
+Cite Us
+--------
 
+This work and the associated code are based on the paper 'Reward-Sharing Relational Networks in Multi-Agent Reinforcement Learning as a Framework for Emergent Behavior' by Hossein Haeri, Reza Ahmadzadeh, and Kshitij Jerath published in International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2021) - Adaptive and Learning Agents Workshop (ALA). If you find our work useful or use it in your research, please consider citing our paper:
+
+https://arxiv.org/abs/2207.05886
+
+You can find more details on the project website: https://sites.google.com/view/marl-rsrn
+https://drive.google.com/file/d/1LTxAY6wN31Quw7PeOfRqSNqlvunOlu0v/view?usp=sharing
 
 
