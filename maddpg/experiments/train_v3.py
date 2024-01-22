@@ -385,8 +385,9 @@ if __name__ == '__main__':
             for key, value in vars(arglist).items():
                 filewriter.writerow([key, value])
 
-
-
+    #################################################
+    # EDIT THIS LINE AND ADD YOUR WandB ACCOUNT INFO
+    #################################################
     wandb.init(project='RSRN', entity='haeri-hsn')
     config = wandb.config
     if arglist.test_mode:
