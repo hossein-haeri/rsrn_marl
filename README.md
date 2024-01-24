@@ -19,7 +19,7 @@ EASY SETUP (recommended): Following the commands provided in /instructions/EC2_c
 2. Training: To train the agents, cd into maddpg/experiments and run `python train_v3.py`. Use argument --exp-name to keep track of your experiment. Adjust the training parameters as required. The default parameters are the ones used in the paper.
 3. Visualization: To visualize the behavior of the agents use --restore to load an already trained experiment and use --display to see the agent behaviors.
 4. To have access to the already trained policies and data please use the /saved_policy/ directory available at
-"https://drive.google.com/drive/folders/16d0wSdxSdNZcQZx6ucAzEAQ9CmWuXMYF?usp=share_link" and paste it into the /experiments/ directory.
+"[https://drive.google.com/drive/folders/16d0wSdxSdNZcQZx6ucAzEAQ9CmWuXMYF?usp=share_link](https://drive.google.com/drive/folders/16d0wSdxSdNZcQZx6ucAzEAQ9CmWuXMYF?usp=share_link)" and paste it into the /experiments/ directory.
 
 
 Simulation and Scenario
