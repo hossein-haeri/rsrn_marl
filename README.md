@@ -63,6 +63,6 @@ https://arxiv.org/abs/2207.05886
 - You can find more details on the project website: https://sites.google.com/view/marl-rsrn
 https://drive.google.com/file/d/1LTxAY6wN31Quw7PeOfRqSNqlvunOlu0v/view?usp=sharing
 
-- If you are using MADDPG, make sure to check the README in the MADDPG directory for how to cite their work and for more information.
+- If you are using MADDPG or MPE, make sure to check the README in the MADDPG directory for how to cite their work and for more information.
 
 
