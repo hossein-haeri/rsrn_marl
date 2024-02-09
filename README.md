@@ -38,7 +38,7 @@ Environment Details:
   - Learning Rate: 0.01
   - Batch Size: 2048
   - Discount Ratio: 0.95
-  - Number of Timesteps per Episodes: 70
+  - Episode length: 70 Timesteps
 
 Scenario Description:
 
@@ -52,12 +52,17 @@ Three agents aim to reach three unlabeled landmarks. Rewards are given upon reac
 
 Cite Us
 --------
+If you find our work useful or use it in your research, please consider citing my thesis and our paper
 
-This work and the associated code are based on the paper 'Reward-Sharing Relational Networks in Multi-Agent Reinforcement Learning as a Framework for Emergent Behavior' by Hossein Haeri, Reza Ahmadzadeh, and Kshitij Jerath published in International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2021) - Adaptive and Learning Agents Workshop (ALA). If you find our work useful or use it in your research, please consider citing our paper:
+- My MS thesis document available at:
+https://www.proquest.com/docview/2920378989?sourcetype=Dissertations%20&%20Theses
 
+- The original paper supporting this work is 'Reward-Sharing Relational Networks in Multi-Agent Reinforcement Learning as a Framework for Emergent Behavior' by Hossein Haeri, Reza Ahmadzadeh, and Kshitij Jerath published in International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2021) - Adaptive and Learning Agents Workshop (ALA) available at:
 https://arxiv.org/abs/2207.05886
 
-You can find more details on the project website: https://sites.google.com/view/marl-rsrn
+- You can find more details on the project website: https://sites.google.com/view/marl-rsrn
 https://drive.google.com/file/d/1LTxAY6wN31Quw7PeOfRqSNqlvunOlu0v/view?usp=sharing
+
+- If you are using MADDPG, make sure to check the README in the MADDPG directory for how to cite their work and for more information.
 
 
